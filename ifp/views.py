@@ -5,5 +5,13 @@ from django.shortcuts import render,HttpResponse
 
 def index(request):
     return HttpResponse("<h1> Innovators For Progress </h1>"
-                        "<p> Hello, world! </p>")
+                        "<br/><p> Hello, world! </p>")
+
+def about(request):
+    result = """<h1> This is the 'About' page </h1>
+             <br/><p> Hello, world! </p>
+             <br/><p> For more information visit 
+             <a href='https://innovatorsforpurpose.org/'>
+             Innovators For Purpose</a> website.</p>"""
+    return HttpResponse(result)
 
