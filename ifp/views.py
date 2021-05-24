@@ -4,7 +4,7 @@ from django.template.loader import render_to_string
 from django.shortcuts import render,HttpResponse
 
 def index(request):
-    return HttpResponse("<h1> Innovators For Progress </h1>"
+    return HttpResponse("<h1> Innovators For Purpose </h1>"
                         "<br/><p> Hello, world! </p>")
 
 def about(request):
