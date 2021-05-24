@@ -4,6 +4,7 @@ from django.contrib import admin
 
 admin.autodiscover()
 
+import ifp.views
 import hello.views
 
 # To add a new path, first import the app:
@@ -15,7 +16,10 @@ import hello.views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path("", hello.views.index, name="index"),
+    path("", ifp.views.index, name="index"),
+    path("ifp", ifp.views.index, name="index"),
+    path("tfc", ifp.views.index, name="index"),
+    path("hello", hello.views.index, name="say_hello"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
 ]
