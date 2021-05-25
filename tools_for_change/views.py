@@ -10,6 +10,10 @@ def index(request):
                         <p> This dyno is named 'bt-2nd-deploy.herokuapp.com' </p>
                         <br/><p> Hello, world! </p>""")
 
+def aframe(request):
+        return render(request, "aframe.html", {})
+
+
 def about(request):
     return HttpResponse("""<h2> Second Deploy: Tools For Curiousity </h2>
                         <p> Hello, world! </p>
