@@ -6,5 +6,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('tfc', views.index, name='index'),
     path('about', views.about, name='about'),
-    path('tools_for_curiousity', views.about, name='about'),
+    path('aframe', views.aframe, name='aframe'),
 ]
