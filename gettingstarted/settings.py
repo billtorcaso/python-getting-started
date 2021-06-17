@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "hello",
+    "tools_for_change",
+    "ifp",
 ]
 
 MIDDLEWARE = [
